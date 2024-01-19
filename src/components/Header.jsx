@@ -48,7 +48,7 @@ const Header = () => {
 
                 {menuOpen && (
                     <div data-aos='fade-right' className="md:hidden duration-1000 absolute z-50 top-12 left-0 right-0 bg-white p-4">
-                        <ul className="space-y-4 mx-36">
+                        <ul className="space-y-3 flex flex-col items-center justify-center">
                             <li><NavLink to="/" className="block text-black text-lg font-bold">Home</NavLink></li>
                             <li><NavLink to="/shop" className="block text-black text-lg font-bold">Shop</NavLink></li>
                             <li><NavLink to="/apple" className="block text-black text-lg font-bold">Apple</NavLink></li>

@@ -7,6 +7,7 @@ import {
 import "./index.css";
 import Home from "./pages/Home";
 import App from "./App";
+import Phones from "./pages/Phones";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,11 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>
+      },
+      {
+        path: "/phones",
+        element: <Phones></Phones>,
+        loader: () => fetch('http://localhost:5000/phone')
       }
     ]
   },

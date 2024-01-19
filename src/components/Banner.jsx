@@ -5,9 +5,12 @@ import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 
 const Banner = ({ autoPlayInterval }) => {
     const slides = [
-        { imgSrc: "https://i.ibb.co/5T5766N/phono-slider-1.webp", text: "EXCLUSIVE STEEL FRAME", textPosition: "left-[75%] ", color: 'text-white', button: 'white-btn' },
-        { imgSrc: "https://i.ibb.co/ZRsm2c9/phono-slider-2.webp", text: "Discover Exciting Offers", textPosition: "right-[10%] left-[38%]", color: 'text-black', button: 'black-btn' },
-        { imgSrc: "https://i.ibb.co/55Tq4DY/phono-slider-3.webp", text: "Join Us Today!", textPosition: "left-[78%]", color: 'text-white', button: 'white-btn' },
+        { imgSrc: "https://i.ibb.co/5T5766N/phono-slider-1.webp",textP: "ZANIA BLACK EDITION",
+         text: "FULL SCREEN DISPLAY!", textPosition: "left-[75%] ", color: 'text-white', button: 'white-btn' },
+        { imgSrc: "https://i.ibb.co/ZRsm2c9/phono-slider-2.webp",textP: "4K RESOLUTION",
+         text: "CURVY BEVEL DUAL AUDIO", textPosition: "right-[10%] left-[38%]", color: 'text-black', button: 'black-btn' },
+        { imgSrc: "https://i.ibb.co/55Tq4DY/phono-slider-3.webp",textP: "DELTA ZERTIGA PROCESSOR",
+         text: "EXCLUSIVE STEEL FRAME!", textPosition: "left-[79%]", color: 'text-white', button: 'white-btn' },
     ]
     const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -34,8 +37,9 @@ const Banner = ({ autoPlayInterval }) => {
                     <div key={index} className="w-full flex-shrink-0 relative">
                         <img src={slide.imgSrc} alt={`Slide ${index + 1}`} className="w-full h-[26vh] md:h-full " />
                         <div className={`absolute ${slide.textPosition}`} style={{ top: '50%', transform: 'translate(-50%, -50%)' }}>
-                            <div className={`text-xl md:text-8xl mb-4 md:mb-10 font-bold ${slide.color} `} >{slide.text}</div>
-                            <button className={`p-2 py-1.5 md:p-3 text-[12px] md:text-lg md:px-10 ${slide.button}`}>Buy Now</button>
+                            <h4 className={`text-[8px] md:text-2xl md:font-bold md:space-x-10 ${slide.color}`}>{slide.textP}</h4>
+                            <h1 className={`text-[18px] md:text-8xl mb-4 md:mb-10 font-bold ${slide.color} `} >{slide.text}</h1>
+                            <button className={`p-2 py-1.5 md:p-3 text-[12px] md:text-lg md:px-14 ${slide.button}`}>Buy Now</button>
                         </div>
                     </div>
                 ))}
