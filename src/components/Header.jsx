@@ -20,7 +20,7 @@ const Header = () => {
     }, []);
     return (
         <header  className="bg-white z-10 text-black py-4">
-            <nav  data-aos="fade-up" className="md:container mx-auto flex items-center justify-between">
+            <nav className="md:container mx-auto flex items-center justify-between">
                 <div className="flex items-center mx-5 justify-between space-x-32">
                     <div className=""> <Link to="/" className=""><img src={logo} alt="" /></Link></div>
                     <div onClick={toggleMenu} className="md:hidden text-black cursor-pointer  ">
@@ -38,14 +38,14 @@ const Header = () => {
                 </div>
 
                 <div className="md:flex hidden items-center space-x-4">
-                    <AiOutlineBell className="text-black cursor-pointer text-xl" />
-                    <AiOutlineUser className="text-black cursor-pointer text-xl" />
-                    <AiOutlineSearch className="text-black cursor-pointer text-xl" />
+                    <AiOutlineBell className="text-black cursor-pointer text-2xl" />
+                    <AiOutlineUser className="text-black cursor-pointer text-2xl" />
+                    <AiOutlineSearch className="text-black cursor-pointer text-2xl" />
                 </div>
 
                 {menuOpen && (
-                    <div data-aos='fade-right' className="md:hidden duration-1000 absolute z-10 top-16 left-0 right-0 bg-white p-4">
-                        <ul className="space-y-4 mx-32">
+                    <div data-aos='fade-right' className="md:hidden duration-1000 absolute z-50 top-16 left-0 right-0 bg-white p-4">
+                        <ul className="space-y-4 mx-36">
                             <li><NavLink to="/" className="block text-black text-lg font-bold">Home</NavLink></li>
                             <li><NavLink to="/about" className="block text-black text-lg font-bold">About</NavLink></li>
                             <li><NavLink to="/contact" className="block text-black text-lg font-bold">Contact</NavLink></li>
