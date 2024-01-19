@@ -25,9 +25,9 @@ const Header = () => {
                     <div className=""> <Link to="/" className=""><img src={logo} alt="" /></Link></div>
                     <div onClick={toggleMenu} className="md:hidden text-black cursor-pointer  ">
                         {menuOpen ?
-                            <RxCross1 className="ml-14 font-bold text-2xl"></RxCross1>
+                            <RxCross1 className="ml-20 font-bold text-2xl"></RxCross1>
                         :
-                        <AiOutlineMenu className="ml-14 font-bold text-2xl" />}
+                        <AiOutlineMenu className="ml-20 font-bold text-2xl" />}
                     </div>
                 </div>
 
