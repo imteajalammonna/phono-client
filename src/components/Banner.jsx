@@ -28,7 +28,7 @@ const Banner = ({ autoPlayInterval }) => {
     }, [currentSlide, autoPlayInterval]);
 
     return (
-        <div className="relative overflow-hidden w-full h-[27vh] md:h-[92vh] mx-auto">
+        <div className="relative overflow-hidden w-full h-[25vh] md:h-[92vh] mx-auto">
             <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
                 {slides.map((slide, index) => (
                     <div key={index} className="w-full flex-shrink-0 relative">
