@@ -24,10 +24,10 @@ const Features = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-3 md:gap-8">
                     {featuresData.map((feature, index) => (
                         <div data-aos={feature.animation}  key={index} className="md:m-5 md:p-6 py-6 p-6 flex items-center">
-                            <img  className="w-16 mb-4" src={feature.image} alt="" />
+                            <img  className="w-14 md:w-16 mb-4" src={feature.image} alt="" />
                             <div className="text-left ml-5">
-                            <h3 className="text-2xl font-bold mb-2">{feature.title}</h3>
-                            <p className="text-gray-600 text-lg">{feature.description}</p>
+                            <h3 className="text-xl md:text-2xl font-bold mb-2">{feature.title}</h3>
+                            <p className="text-gray-600 text-sm md:text-lg">{feature.description}</p>
                             </div>
                         </div>
                     ))}

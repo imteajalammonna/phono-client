@@ -9,21 +9,21 @@ const Specialty = () => {
             <p className="text-center text-sm md:text-xl !mb-16 text-gray-500">EXPERIENCE HIGH PERFORMANCE AND SECURE</p>
             <div className="grid grid-cols-1 md:grid-cols-3">
             <div className="flex flex-col items-center justify-center space-y-3">
-                    <img className="flex" src={icon2} alt="" />
+                    <img className="w-20 md:w-36" src={icon2} alt="" />
                     <p className=" text-lg md:text-xl ">Perfect Cut</p>
-                    <h4 className="text-2xl md:text-3xl ">DUAL CAMERA</h4>
+                    <h4 className="text-xl md:text-3xl font-bold">DUAL CAMERA</h4>
                     <p className="text-lg md:text-xl mx-4 text-gray-400">Tristique senectus et netus et malesuada ant reiet fames.</p>
                 </div>
                 <div className="flex flex-col items-center justify-center space-y-3">
-                    <img className="flex" src={icon3} alt="" />
-                    <p className="text-lg md:text-xl ">Perfect Cut</p>
-                    <h4 className="text-2xl md:text-3xl">DUAL CAMERA</h4>
+                    <img className="w-20 md:w-36" src={icon3} alt="" />
+                    <p className="text-lg md:text-xl ">Pretty</p>
+                    <h4 className="text-xl md:text-3xl font-bold">INTELLIGENT PROCESSING</h4>
                     <p className="text-lg md:text-xl mx-4 text-gray-400">Tristique senectus et netus et malesuada ant reiet fames.</p>
                 </div>
                 <div className="flex flex-col items-center justify-center space-y-3">
-                    <img className="flex " src={icon1} alt="" />
+                    <img className="w-20 md:w-36 " src={icon1} alt="" />
                     <p className="text-lg md:text-xl ">Perfect Cut</p>
-                    <h4 className="text-2xl md:text-3xl">DUAL CAMERA</h4>
+                    <h4 className="text-xl md:text-3xl font-bold">8GB DDR5 RAM</h4>
                     <p className="text-lg md:text-xl mx-4 text-gray-400">Tristique senectus et netus et malesuada ant reiet fames.</p>
                 </div>
             </div>

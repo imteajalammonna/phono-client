@@ -19,7 +19,7 @@ const Header = () => {
         });
     }, []);
     return (
-        <header  className="bg-white z-10 text-black py-4">
+        <header  className="bg-white z-10 text-black p-3 md:py-4 ">
             <nav className="md:container mx-auto flex items-center justify-between">
                 <div className="flex items-center mx-5 justify-between space-x-32">
                     <div className=""> <Link to="/" className=""><img src={logo} alt="" /></Link></div>
@@ -44,7 +44,7 @@ const Header = () => {
                 </div>
 
                 {menuOpen && (
-                    <div data-aos='fade-right' className="md:hidden duration-1000 absolute z-50 top-16 left-0 right-0 bg-white p-4">
+                    <div data-aos='fade-right' className="md:hidden duration-1000 absolute z-50 top-12 left-0 right-0 bg-white p-4">
                         <ul className="space-y-4 mx-36">
                             <li><NavLink to="/" className="block text-black text-lg font-bold">Home</NavLink></li>
                             <li><NavLink to="/about" className="block text-black text-lg font-bold">About</NavLink></li>
