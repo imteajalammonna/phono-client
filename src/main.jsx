@@ -19,9 +19,9 @@ const router = createBrowserRouter([
         element: <Home></Home>
       },
       {
-        path: "/phones",
+        path: "/phone",
         element: <Phones></Phones>,
-        loader: () => fetch('http://localhost:5000/phone')
+        loader: () => fetch('/https://phono-server-2goja3lkg-monnas-projects.vercel.app/phone')
       }
     ]
   },

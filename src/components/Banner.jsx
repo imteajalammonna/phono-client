@@ -6,7 +6,7 @@ import { MdArrowBackIosNew, MdArrowForwardIos } from "react-icons/md";
 const Banner = ({ autoPlayInterval }) => {
     const slides = [
         { imgSrc: "https://i.ibb.co/5T5766N/phono-slider-1.webp",textP: "ZANIA BLACK EDITION",
-         text: "FULL SCREEN DISPLAY!", textPosition: "left-[75%] ", color: 'text-white', button: 'white-btn' },
+         text: "FULL SCREEN DISPLAY!", textPosition: "left-[68%] ", color: 'text-white', button: 'white-btn' },
         { imgSrc: "https://i.ibb.co/ZRsm2c9/phono-slider-2.webp",textP: "4K RESOLUTION",
          text: "CURVY BEVEL DUAL AUDIO", textPosition: "right-[10%] left-[38%]", color: 'text-black', button: 'black-btn' },
         { imgSrc: "https://i.ibb.co/55Tq4DY/phono-slider-3.webp",textP: "DELTA ZERTIGA PROCESSOR",
@@ -28,8 +28,8 @@ const Banner = ({ autoPlayInterval }) => {
         return () => {
             clearInterval(intervalId);
         };
-    }, [currentSlide, autoPlayInterval]);
-
+    }, [currentSlide , autoPlayInterval]);
+ 
     return (
         <div className="relative overflow-hidden w-full h-[26vh] md:h-[92vh] mx-auto">
             <div className="flex transition-transform duration-500 ease-in-out" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
